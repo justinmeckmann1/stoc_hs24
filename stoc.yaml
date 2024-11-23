@@ -1,4 +1,4 @@
-name: pavescope
+name: stoc
 channels:
   - pytorch
   - conda-forge
