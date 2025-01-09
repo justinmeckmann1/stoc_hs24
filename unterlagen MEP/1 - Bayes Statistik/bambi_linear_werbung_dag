@@ -1,0 +1,25 @@
+digraph {
+	graph [dpi=300 size="None,None!"]
+	TV [label="TV
+~
+Normal" shape=ellipse]
+	sigma [label="sigma
+~
+HalfStudentT" shape=ellipse]
+	Intercept [label="Intercept
+~
+Normal" shape=ellipse]
+	subgraph "cluster__obs__ (200)" {
+		mu [label="mu
+~
+Deterministic" shape=box]
+		Verkauf [label="Verkauf
+~
+Normal" shape=ellipse style=filled]
+		label="__obs__ (200)" labeljust=r labelloc=b style=rounded
+	}
+	TV -> mu
+	Intercept -> mu
+	mu -> Verkauf
+	sigma -> Verkauf
+}
