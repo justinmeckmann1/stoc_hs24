@@ -1,0 +1,1 @@
+chemical_shifts.csv filter=lfs diff=lfs merge=lfs -text
